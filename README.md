@@ -7,18 +7,33 @@ Things you may want to cover:
 
 * Ruby version
 
-* System dependencies
+```
+ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-darwin15]
+```
 
 * Configuration
 
+```
+$ bundle update
+$ bundle install --without production
+```
+
 * Database creation
+
+on development
+```
+$ rails db:migrate
+```
+
+on production
+```
+$  heroku run rails db:migrate
+```
 
 * Database initialization
 
 * How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+$ rails test
+```
